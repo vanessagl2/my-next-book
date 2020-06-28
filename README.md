@@ -17,3 +17,7 @@ Sample RESTful API to manage a book catalog.
 * JUnit, Mockito, RestAssured for testing
 * ArchUnit to test your code design
 * Gradle to manage your dependencies
+
+
+### Further reference
+* [HATEOS](https://spring.io/guides/gs/rest-hateoas/#scratch)

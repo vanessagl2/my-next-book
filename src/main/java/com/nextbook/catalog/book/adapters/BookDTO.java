@@ -6,12 +6,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.validation.constraints.NotNull;
+
 @ToString
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class BookDTO {
+
+  @NotNull
   private String title;
+
+  @NotNull
   private String author;
 
   public Book toBook() {

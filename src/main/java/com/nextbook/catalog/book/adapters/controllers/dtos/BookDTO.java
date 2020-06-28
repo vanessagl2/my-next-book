@@ -1,6 +1,6 @@
-package com.nextbook.catalog.book.adapters;
+package com.nextbook.catalog.book.adapters.controllers.dtos;
 
-import com.nextbook.catalog.book.domain.Book;
+import com.nextbook.catalog.book.domain.model.Book;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

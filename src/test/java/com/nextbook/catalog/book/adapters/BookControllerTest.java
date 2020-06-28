@@ -1,6 +1,8 @@
 package com.nextbook.catalog.book.adapters;
 
-import com.nextbook.catalog.book.domain.Book;
+import com.nextbook.catalog.book.adapters.controllers.BookController;
+import com.nextbook.catalog.book.domain.model.Book;
+import com.nextbook.catalog.book.domain.services.BookService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,6 +1,6 @@
-package com.nextbook.catalog.book.adapters;
+package com.nextbook.catalog.book.domain.services;
 
-import com.nextbook.catalog.book.domain.Book;
+import com.nextbook.catalog.book.domain.model.Book;
 import org.springframework.stereotype.Service;
 
 @Service

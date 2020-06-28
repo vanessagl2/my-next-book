@@ -1,6 +1,8 @@
-package com.nextbook.catalog.book.adapters;
+package com.nextbook.catalog.book.adapters.controllers;
 
-import com.nextbook.catalog.book.domain.Book;
+import com.nextbook.catalog.book.adapters.controllers.dtos.BookDTO;
+import com.nextbook.catalog.book.domain.model.Book;
+import com.nextbook.catalog.book.domain.services.BookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;

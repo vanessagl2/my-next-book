@@ -1,4 +1,4 @@
-package com.nextbook.catalog.book.domain;
+package com.nextbook.catalog.book.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

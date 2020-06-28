@@ -15,10 +15,18 @@ import javax.validation.Valid;
 @RequestMapping(value = "/books")
 public class BookController {
 
+  private final BookService bookService;
+
+  public BookController(BookService bookService) {
+    this.bookService = bookService;
+  }
+
   @ResponseStatus(HttpStatus.CREATED)
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-  public Book createBook(@Valid @RequestBody BookDTO book) {
-    return book.toBook();
+  public BookDTO createBook(@Valid @RequestBody BookDTO newBook) {
+    Book savedBook = bookService.save(newBook.toBook());
+
+    return BookDTO.fromBook(savedBook);
   }
 
 

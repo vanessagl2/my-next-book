@@ -14,6 +14,8 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 public class BookDTO {
 
+  private String id;
+
   @NotNull
   private String title;
 
@@ -21,6 +23,10 @@ public class BookDTO {
   private String author;
 
   public Book toBook() {
-    return new Book("id-1", this.title, this.author);
+    return new Book(this.title, this.author);
+  }
+
+  public static BookDTO fromBook(Book book) {
+    return new BookDTO(book.getId(), book.getTitle(), book.getAuthor());
   }
 }

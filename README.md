@@ -1,9 +1,12 @@
+# Learning series: Backend API in JAVA
+Sample backend API. The goal is to exercise key concepts using JAVA 14, Spring Boot, Junit 5.
+
+
 # My Next Book
 
 ## Context
 Sample RESTful API to manage a book catalog. 
 
-##
 
 ### Technical Stack
 * Java 14

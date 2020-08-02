@@ -17,6 +17,10 @@ Locally the application is running with an H2 database and a volatile memory def
 ```shell script
 $ ./gradlew bootRun
 ```
+* Run with specific profile
+```shell script
+$ ./gradlew bootRun --args='--spring.profiles.active=PROFILE  '
+```
 
 #### Building local docker image
 * Build the application (please notice that the application name and version may vary): 
@@ -33,6 +37,10 @@ $ docker build --build-arg DEPENDENCY=build/dependency -t catalog/my-next-book-d
 * Run the application:
 ```shell script
 $ docker run --name=books -d -p 8080:8080 catalog/my-next-book-docker
+```
+* Alternatively you can override the Spring active profile by running the container with:  
+```shell script
+$ docker run -e "spring.profiles.active=PROFILE" --name=books -p 8080:8080 catalog/my-next-book-docker
 ```
 The application is then available on http://localhost:8080
 

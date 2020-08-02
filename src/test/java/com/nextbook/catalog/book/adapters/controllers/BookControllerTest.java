@@ -2,6 +2,7 @@ package com.nextbook.catalog.book.adapters.controllers;
 
 import com.nextbook.catalog.book.domain.model.Book;
 import com.nextbook.catalog.book.domain.services.BookService;
+import com.nextbook.catalog.util.IntegrationTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -24,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(BookController.class)
-class BookControllerTest {
+class BookControllerTest extends IntegrationTest {
 
   @MockBean
   private BookService service;

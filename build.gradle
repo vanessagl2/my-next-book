@@ -37,3 +37,9 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+def defaultProfile = 'local'
+
+bootRun {
+	args = ["--spring.profiles.active=" + defaultProfile]
+}

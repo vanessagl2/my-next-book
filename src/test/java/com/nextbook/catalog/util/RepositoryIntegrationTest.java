@@ -13,5 +13,5 @@ import org.springframework.stereotype.Repository;
     includeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Repository.class)
 )
 @EnableJpaRepositories(basePackages = {"com.nextbook.catalog.book.adapters.repository"})
-public class RepositoryIntegrationTest {
+public class RepositoryIntegrationTest extends IntegrationTest {
 }

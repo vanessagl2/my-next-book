@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 public class BookService {
 
   public Book save(Book book) {
-    return new Book("id-1", book.getTitle(), book.getTitle());
+    return new Book("id-1", book.getTitle(), book.getAuthor());
   }
 }

@@ -2,7 +2,7 @@
 Sample backend API. The goal is to exercise key concepts using JAVA 14, Spring Boot, Junit 5.
 
 # My Next Book
-[![Build status](https://github.com/vanessagl2/my-next-book/workflows/my-next-book-main/badge.svg?branch=main)](https://github.com/vanessagl2/my-next-book/actions)
+[![Build status Actions Status](https://github.com/vanessagl2/my-next-book/workflows/my-next-book-main/badge.svg?branch=main)](https://github.com/vanessagl2/my-next-book/actions)
 
 
 ## Context
